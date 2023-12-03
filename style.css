@@ -1245,6 +1245,7 @@ form button:hover {
     .blog-image-container .date {
         display: none;
     }
+
     .absolute-logo{
         top: 20px;
         left: 20px;
@@ -1259,6 +1260,10 @@ form button:hover {
 @media (max-width:650px) {
     nav {
         padding: 12px 30px;
+    }
+
+    nav ul{
+        top: 65px;
     }
 
     .hero-section{
