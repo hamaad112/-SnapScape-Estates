@@ -343,6 +343,7 @@ nav i {
 .agent-section .image-container {
     flex-wrap: wrap;
     align-items: center;
+    gap: 20px
 }
 
 .agent-section .image-container img {
