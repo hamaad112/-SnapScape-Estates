@@ -35,14 +35,17 @@ li {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #004274;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     vertical-align: middle;
     padding-inline: 60px;
     padding-block: 20px;
+    z-index: 1000;
 }
 
 nav img {
@@ -121,6 +124,7 @@ nav i {
     background-position: center;
     color: #fff;
     height: 100vh;
+    margin-top: 80px;
 }
 
 .hero-section h3 {
@@ -1099,12 +1103,12 @@ form button:hover {
 
 /* Media Query */
 
-@media (max-width:950px) {
+@media (max-width:1030px) {
     nav ul {
         position: absolute;
         flex-direction: column;
         background: #000;
-        top: 65px;
+        top: 80px;
         left: 0;
         right: 0;
         overflow: hidden;
@@ -1116,7 +1120,6 @@ form button:hover {
     }
 
     nav ul li {
-        /* padding: 0; */
         padding-top: 20px;
         padding-bottom: 10px;
     }
@@ -1124,6 +1127,10 @@ form button:hover {
     .menu-icon {
         display: block;
         cursor: pointer;
+        position: fixed;
+        top: 25px;
+        right: 5%;
+        z-index: 2000;
     }
 
     #menuList {
@@ -1252,6 +1259,14 @@ form button:hover {
         padding: 12px 30px;
     }
 
+    .hero-section{
+        margin-top: 50px;
+    }
+
+    .menu-icon{
+        top: 20px;
+    }
+
     .featured-section .card-container {
         align-items: center;
         justify-content: center;
@@ -1301,6 +1316,10 @@ form button:hover {
     .remember {
         flex-direction: column;
         align-items: start;
+    }
+
+    .blog-image-container .content {
+        padding-top: 30px !important;
     }
 }
 
